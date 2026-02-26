@@ -172,37 +172,6 @@ export default function LoginPage() {
                 {loading ? 'Signing in...' : 'Sign in'}
               </Button>
             </form>
-
-            <div className="mt-6 pt-6 border-t border-gray-800">
-              <p className="text-sm text-gray-400 text-center mb-3 font-medium">
-                Demo Accounts
-              </p>
-              <div className="space-y-2 text-xs">
-                <div className="bg-gray-950 p-3 rounded-lg border border-gray-800">
-                  <p className="font-semibold text-gray-300 mb-1">Super Admin</p>
-                  <p className="text-gray-400 font-mono">superadmin@safebetiq.com</p>
-                  <p className="text-gray-500 font-mono">Super@2024!</p>
-                </div>
-                <div className="bg-gray-950 p-3 rounded-lg border border-gray-800">
-                  <p className="font-semibold text-gray-300 mb-1">Casino Admin (Royal Palace)</p>
-                  <p className="text-gray-400 font-mono">admin@royalpalace.safebetiq.com</p>
-                  <p className="text-gray-500 font-mono">Admin123!</p>
-                </div>
-                <div className="bg-gray-950 p-3 rounded-lg border border-gray-800">
-                  <p className="font-semibold text-gray-300 mb-1">Regulator</p>
-                  <p className="text-gray-400 font-mono">regulator@ngb.gov.za</p>
-                  <p className="text-gray-500 font-mono">Regulator123!</p>
-                </div>
-                <div className="bg-brand-950 p-3 rounded-lg border border-brand-700">
-                  <p className="font-semibold text-brand-300 mb-1">Staff (Training Academy)</p>
-                  <p className="text-brand-400 font-mono">james.anderson@royalpalace.safebetiq.com</p>
-                  <p className="text-brand-400 font-mono">Staff123!</p>
-                </div>
-              </div>
-              <p className="text-xs text-gray-500 text-center mt-3">
-                Click any credential to copy • All passwords are demo only
-              </p>
-            </div>
           </CardContent>
         </Card>
 
