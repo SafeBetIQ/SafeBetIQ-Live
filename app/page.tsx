@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,10 +11,11 @@ import MainNavigation from '@/components/MainNavigation';
 import AINetworkBackground from '@/components/AINetworkBackground';
 import TypewriterText from '@/components/TypewriterText';
 import FloatingAIPulse from '@/components/FloatingAIPulse';
-import CursorTrail from '@/components/CursorTrail';
-import LiveAIDashboard from '@/components/LiveAIDashboard';
-import AIMonitoringIndicator from '@/components/AIMonitoringIndicator';
-import { Footer } from '@/components/Footer';
+
+const CursorTrail = dynamic(() => import('@/components/CursorTrail'), { ssr: false });
+const LiveAIDashboard = dynamic(() => import('@/components/LiveAIDashboard'), { ssr: false });
+const AIMonitoringIndicator = dynamic(() => import('@/components/AIMonitoringIndicator'), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer').then(mod => ({ default: mod.Footer })), { ssr: false });
 import {
   Shield,
   Brain,

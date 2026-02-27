@@ -1,0 +1,14 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+# Disallow admin and private areas
+Disallow: /admin/
+Disallow: /casino/
+Disallow: /regulator/
+Disallow: /staff/
+Disallow: /login
+Disallow: /auth-debug
+
+# Sitemap
+Sitemap: https://safebetiq.com/sitemap.xml
